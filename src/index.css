@@ -1,0 +1,39 @@
+.main-container {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container h1 {
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.container button {
+  background-color: transparent;
+  padding: 20px 40px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+}
+
+.container button:hover {
+  background-color: rgb(47, 224, 224);
+  transform: scale(1.05);
+  border: none;
+}
+
+.container p {
+  font-size: 40px;
+}
