@@ -26,7 +26,9 @@ function App() {
     setName("Sufyan Saleem");
   }
 
-
+  const ageChange = () => {
+    setAge(Math.floor(Math.random() * 35));
+  }
 
   return (
     <div className='main-container'>
