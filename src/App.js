@@ -4,6 +4,9 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
+  const [name, setName] = useState("Sufyan");
+  const [age, setAge] = useState(20);
+
   function decrement() {
     if (count === 0) return;
     setCount(count - 1);
@@ -15,7 +18,15 @@ function App() {
 
   function reset() {
     setCount(count * 0);
+    setName("Sufyan");
+    setAge(20);
   }
+
+  const nameChange = () => {
+    setName("Sufyan Saleem");
+  }
+
+
 
   return (
     <div className='main-container'>
@@ -33,6 +44,14 @@ function App() {
         <button onClick={reset}>
           Reset
         </button>
+      </div>
+      <div className='container'>
+        <p>{name}</p>
+        <button onClick={nameChange}>Change Name</button>
+      </div>
+      <div className='container'>
+        <p>{age}</p>
+        <button onClick={ageChange}>Change Age</button>
       </div>
     </div >
   );
