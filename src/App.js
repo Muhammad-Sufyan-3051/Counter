@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import { Intro } from './Intro';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -55,6 +56,7 @@ function App() {
         <p>{age}</p>
         <button onClick={ageChange}>Change Age</button>
       </div>
+      <Intro name={name} age={age} />
     </div >
   );
 }
