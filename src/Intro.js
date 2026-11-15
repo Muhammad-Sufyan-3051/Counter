@@ -8,6 +8,7 @@ export const Intro = (props) => {
     return (
         <div>
             <h1>Introduction</h1>
+
             <h2>{props.name}</h2>
             <h2>{props.age}</h2>
             <h2>{user.address}</h2>
